@@ -1,0 +1,5 @@
+# ESP32-S3 partition table for MicroPython
+nvs,data,nvs,0x9000,0x5000
+otadata,data,ota,0xe000,0x2000
+app0,app,factory,0x10000,0x600000
+spiffs,data,spiffs,0x610000,0x1F0000
