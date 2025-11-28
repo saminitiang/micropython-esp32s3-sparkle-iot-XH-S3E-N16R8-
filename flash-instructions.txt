@@ -1,0 +1,14 @@
+Flash Instructions ESP32-S3 (MicroPython BLE MIDI)
+
+1. Masuk mode download:
+   - Tahan BOOT
+   - Tekan RESET
+   - Lepas BOOT
+
+2. Flash firmware:
+   esptool.py --chip esp32s3 write_flash -z 0x0 firmware/micropython.bin
+
+3. Setelah flash:
+   copy main.py, ble_midi.py, usb_midi.py ke filesystem internal.
+
+4. Reset ESP32-S3.
